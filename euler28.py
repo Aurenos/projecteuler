@@ -1,21 +1,20 @@
 ## Kile Deal - 2013
-## Project Euler Problem #20
+## Project Euler Problem #28
 ## Status: Solved
 
-sum = 0
+total = 0
 
-n = range(1,(1001*2)+1)
-x = 0
+x = 1
 increment = 2
 ct = 0
 
-while x < len(n):
-    if ct == 5: 
+
+while x <= 1001**2:
+    total += x
+    x += increment
+    ct += 1
+    if ct == 4:
         ct = 0
-        increment *= 2
-    else:
-        sum += n[x]
-        x += increment
-        ct += 1
-        
-print sum
+        increment +=2
+    
+print total
