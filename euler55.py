@@ -1,11 +1,8 @@
-from time import sleep
-
 def is_lychrel(x):
     result = x
     for _ in xrange(51):
         result = result + int(str(result)[::-1])
         if int(str(result)) == int(str(result)[::-1]):
-            print x, result
             return False
     
     return True
