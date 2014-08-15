@@ -1,3 +1,6 @@
+## Kile Deal
+## Euler Problem #55
+
 def is_lychrel(x):
     result = x
     for _ in xrange(51):
